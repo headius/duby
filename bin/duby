@@ -1,9 +1,0 @@
-#!/usr/bin/env jruby
-begin
-  require 'duby'
-rescue LoadError
-  $: << File.dirname(File.dirname(__FILE__)) + '/lib'
-  require 'duby'
-end
-
-Duby.run(*ARGV)
